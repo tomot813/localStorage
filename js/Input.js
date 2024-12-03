@@ -1,6 +1,6 @@
 function SetValue() {
-    sessionStorage.removeItem("sharedData"); 
-    sessionStorage.setItem("sharedData", document.getElementById("input").value); 
+    sessionStorage.removeItem("sharedData"); //localStorage || sessionStorage
+    sessionStorage.setItem("sharedData", document.getElementById("input").value); //localStorage || sessionStorage
     document.getElementById("input").value = "";
 }
 

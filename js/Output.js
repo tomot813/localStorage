@@ -1,5 +1,5 @@
 function GetValue() {
-    const savedData = sessionStorage.getItem("sharedData"); 
+    const savedData = sessionStorage.getItem("sharedData"); //localStorage || sessionStorage
 
     if (savedData) {
         document.getElementById("output").innerText = savedData; 
