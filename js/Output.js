@@ -1,15 +1,15 @@
 function GetValue() {
-    const savedData = localStorage.getItem("sharedData"); // Получаем данные из localStorage
+    const savedData = sessionStorage.getItem("sharedData"); 
 
     if (savedData) {
-        document.getElementById("output").innerText = savedData; // Отображаем данные
+        document.getElementById("output").innerText = savedData; 
     } else {
-        document.getElementById("output").innerText = "no value"; // Если данных нет
+        document.getElementById("output").innerText = "no value"; 
     }
 }
 
 function Clear(){
-    localStorage.clear(); // Очищаем ВСЕ (у нее ограничение в 5 мб)
+    sessionStorage.clear();
 }
 document.getElementById("btn_get").addEventListener("click", GetValue);
 document.getElementById("btn_clear").addEventListener("click", Clear);

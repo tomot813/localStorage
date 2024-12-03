@@ -1,6 +1,6 @@
 function SetValue() {
-    localStorage.removeItem("sharedData"); // Очистка предыдущкго значения
-    localStorage.setItem("sharedData", document.getElementById("input").value); // Сохраняем в localStorage (у нее ограничение в 5 мб)
+    sessionStorage.removeItem("sharedData"); 
+    sessionStorage.setItem("sharedData", document.getElementById("input").value); 
     document.getElementById("input").value = "";
 }
 
